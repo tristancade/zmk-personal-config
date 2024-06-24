@@ -23,8 +23,13 @@
         };
 
         Spacebar {
-            bindings = <&kp SLASH>;
-            key-positions = <38 39>;
+            bindings = <&kp QUESTION>;
+            key-positions = <20 21>;
+        };
+
+        quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <8 9>;
         };
     };
 
