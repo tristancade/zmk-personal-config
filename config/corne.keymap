@@ -22,6 +22,36 @@
         };
     };
 
+    behaviors {
+        Jx2_N: Jx2_N {
+            compatible = "zmk,behavior-tap-dance";
+            label = "JX2_N";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp N>;
+        };
+
+        Kx2_M: Kx2_M {
+            compatible = "zmk,behavior-tap-dance";
+            label = "KX2_M";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&kp M>;
+        };
+
+        SPCx2_Period: SPCx2_Period {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPCX2_PERIOD";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp PERIOD>;
+        };
+
+        Lx2_Comma: Lx2_Comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LX2_COMMA";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp COMMA>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
