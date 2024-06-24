@@ -19,7 +19,7 @@
 
         Return {
             bindings = <&kp RET>;
-            key-positions = <21 10>;
+            key-positions = <21 22>;
         };
 
         Spacebar {
