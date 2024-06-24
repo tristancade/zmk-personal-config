@@ -224,7 +224,7 @@
 
             bindings = <
 &kp TAB    &kp Q          &kp W          &kp E          &kp R             &kp T            &kp Y          &kp U          &kp I                  &kp O                    &kp P     &kp BSPC
-&kp LCTRL  &A_hold_Z Z A  &S_hold_x X S  &D_hold_C C D  &F_hold_V V F     &G_hold_B B G    &h_hold_n N H  &j_hold_m M J  &K_hold_Comma COMMA K  &L_hold_period PERIOD L  &kp SEMI  &kp SQT
+&kp LCTRL  &A_hold_Z Z A  &S_hold_x X S  &D_hold_C C D  &F_hold_V V F     &G_hold_B B G    &h_hold_n N H  &j_hold_m M J  &K_hold_Comma COMMA K  &L_hold_period PERIOD L  &kp RET   &kp SQT
 &kp LSHFT  &kp Z          &kp X          &kp C          &kp V             &kp B            &kp N          &kp M          &kp COMMA              &kp DOT                  &kp FSLH  &kp ESC
                                          &mo 1          &kp LEFT_COMMAND  &kp SPACE        &kp SPACE      &kp SLASH      &mo 1
             >;
