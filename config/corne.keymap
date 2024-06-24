@@ -23,7 +23,7 @@
         };
 
         Spacebar {
-            bindings = <&kp SPACE>;
+            bindings = <&kp SLASH>;
             key-positions = <38 39>;
         };
     };
