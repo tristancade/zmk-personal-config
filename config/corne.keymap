@@ -31,6 +31,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <8 9>;
         };
+
+        shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <38 39>;
+        };
     };
 
     behaviors {
