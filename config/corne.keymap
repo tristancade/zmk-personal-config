@@ -50,6 +50,41 @@
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp COMMA>;
         };
+
+        Ax2_Z: Ax2_Z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "AX2_Z";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp Z>;
+        };
+
+        Sx2_X: Sx2_X {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SX2_X";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp X>;
+        };
+
+        Dx2_C: Dx2_C {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DX2_C";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp C>;
+        };
+
+        Fx2_V: Fx2_V {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FX2_V";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp V>;
+        };
+
+        Gx2_B: Gx2_B {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GX2_B";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp B>;
+        };
     };
 
     keymap {
