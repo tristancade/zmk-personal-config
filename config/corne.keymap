@@ -120,7 +120,7 @@
             #binding-cells = <2>;
             hold-trigger-key-positions = <18>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         j_hold_m: j_hold_m {
@@ -129,7 +129,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <19>;
         };
@@ -140,7 +140,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <20>;
         };
@@ -151,7 +151,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <21>;
         };
@@ -162,7 +162,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <13>;
         };
@@ -173,7 +173,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             hold-trigger-key-positions = <14>;
             flavor = "tap-preferred";
         };
@@ -184,7 +184,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <15>;
         };
@@ -195,7 +195,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <16>;
         };
@@ -206,7 +206,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <17>;
         };
