@@ -12,19 +12,14 @@
     combos {
         compatible = "zmk,combos";
 
-        Backspace {
+        quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <9 10>;
         };
 
         Return {
-            bindings = <&kp RET>;
-            key-positions = <21 22>;
-        };
-
-        questionmark {
-            bindings = <&kp QUESTION>;
-            key-positions = <20 21>;
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 20>;
         };
 
         backspace {
@@ -69,9 +64,20 @@
     };
 
     behaviors {
-        J_COMMA: J_COMMA {
+        H_COMMA: H_COMMA {
             compatible = "zmk,behavior-hold-tap";
-            label = "J_COMMA";
+            label = "H_COMMA";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <18>;
+        };
+
+        J_PERIOD: J_PERIOD {
+            compatible = "zmk,behavior-hold-tap";
+            label = "J_PERIOD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -80,9 +86,9 @@
             hold-trigger-key-positions = <19>;
         };
 
-        K_PERIOD: K_PERIOD {
+        K_QUESTION: K_QUESTION {
             compatible = "zmk,behavior-hold-tap";
-            label = "K_PERIOD";
+            label = "K_QUESTION";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -91,26 +97,15 @@
             hold-trigger-key-positions = <20>;
         };
 
-        L_QUESTION: L_QUESTION {
+        L_EXCLAIM: L_EXCLAIM {
             compatible = "zmk,behavior-hold-tap";
-            label = "L_QUESTION";
+            label = "L_EXCLAIM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <21>;
-        };
-
-        RET_EXCLAIM: RET_EXCLAIM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RET_EXCLAIM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <22>;
         };
 
         Q_1: Q_1 {
@@ -235,10 +230,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y      &kp U             &kp I               &kp O                   &kp P                         &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H      &J_COMMA COMMA J  &K_PERIOD PERIOD K  &L_QUESTION QUESTION L  &RET_EXCLAIM EXCLAMATION RET  &none
-&none  &none  &none  &none  &none  &none    &none      &none             &none               &none                   &none                         &none
-                     &kp C  &kp V  &kp B    &kp SPACE  &kp N             &kp M
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y             &kp U               &kp I                   &kp O              &kp P    &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G    &H_COMMA COMMA H  &J_PERIOD PERIOD J  &K_QUESTION QUESTION K  &L_EXCLAIM EXCL L  &kp RET  &none
+&none  &none  &none  &none  &none  &none    &none             &none               &none                   &none              &none    &none
+                     &kp C  &kp V  &kp B    &kp SPACE         &kp N               &kp M
             >;
         };
 
