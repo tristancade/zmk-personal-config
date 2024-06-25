@@ -30,6 +30,41 @@
             bindings = <&kp TAB>;
             key-positions = <2 1>;
         };
+
+        HJ_N {
+            bindings = <&kp N>;
+            key-positions = <18 19>;
+        };
+
+        JK_M {
+            bindings = <&kp M>;
+            key-positions = <19 20>;
+        };
+
+        SD_C {
+            bindings = <&kp C>;
+            key-positions = <13 14>;
+        };
+
+        DF_V {
+            bindings = <&kp V>;
+            key-positions = <15 16>;
+        };
+
+        FG_B {
+            bindings = <&kp B>;
+            key-positions = <16 17>;
+        };
+
+        Command {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <37 38>;
+        };
+
+        layer_toggle {
+            bindings = <&mo 1>;
+            key-positions = <39 40>;
+        };
     };
 
     behaviors {
