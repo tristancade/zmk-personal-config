@@ -137,46 +137,35 @@
             bindings = <&kp G>, <&kp B>;
         };
 
-        h_hold_n: h_hold_n {
+        J_COMMA: J_COMMA {
             compatible = "zmk,behavior-hold-tap";
-            label = "H_HOLD_N";
+            label = "J_COMMA";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <18>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-        };
-
-        j_hold_m: j_hold_m {
-            compatible = "zmk,behavior-hold-tap";
-            label = "J_HOLD_M";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <19>;
         };
 
-        K_hold_Comma: K_hold_Comma {
+        K_PERIOD: K_PERIOD {
             compatible = "zmk,behavior-hold-tap";
-            label = "K_HOLD_COMMA";
+            label = "K_PERIOD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <20>;
         };
 
-        L_hold_period: L_hold_period {
+        L_QUESTION: L_QUESTION {
             compatible = "zmk,behavior-hold-tap";
-            label = "L_HOLD_PERIOD";
+            label = "L_QUESTION";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <21>;
         };
@@ -235,6 +224,17 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <17>;
         };
+
+        RET_EXCLAIM: RET_EXCLAIM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RET_EXCLAIM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <22>;
+        };
     };
 
     keymap {
@@ -248,10 +248,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y      &kp U  &kp I  &kp O  &kp P    &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H      &kp J  &kp K  &kp L  &kp RET  &none
-&none  &none  &none  &none  &none  &none    &none      &none  &none  &none  &none    &none
-                     &kp C  &kp V  &kp B    &kp SPACE  &kp N  &kp M
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y      &kp U             &kp I               &kp O                   &kp P                         &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H      &J_COMMA COMMA J  &K_PERIOD PERIOD K  &L_QUESTION QUESTION L  &RET_EXCLAIM EXCLAMATION RET  &none
+&none  &none  &none  &none  &none  &none    &none      &none             &none               &none                   &none                         &none
+                     &kp C  &kp V  &kp B    &kp SPACE  &kp N             &kp M
             >;
         };
 
