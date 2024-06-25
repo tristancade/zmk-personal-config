@@ -32,11 +32,6 @@
             key-positions = <8 9>;
         };
 
-        shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <38 39>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <2 1>;
@@ -45,6 +40,46 @@
         caps {
             bindings = <&kp CLCK>;
             key-positions = <13 14>;
+        };
+
+        spacebar {
+            bindings = <&kp SPACE>;
+            key-positions = <38 39>;
+        };
+
+        A+S_Z {
+            bindings = <&kp Z>;
+            key-positions = <13 14>;
+        };
+
+        S+D_X {
+            bindings = <&kp X>;
+            key-positions = <14 15>;
+        };
+
+        J+K_N {
+            bindings = <&kp N>;
+            key-positions = <19 20>;
+        };
+
+        K+L_M {
+            bindings = <&kp M>;
+            key-positions = <20 21>;
+        };
+
+        S+D_C {
+            bindings = <&kp C>;
+            key-positions = <15 14>;
+        };
+
+        F+J_B {
+            bindings = <&kp B>;
+            key-positions = <16 19>;
+        };
+
+        D+F_V {
+            bindings = <&kp V>;
+            key-positions = <15 16>;
         };
     };
 
