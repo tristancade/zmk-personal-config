@@ -43,7 +43,7 @@
 
         SD_C {
             bindings = <&kp C>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
         };
 
         DF_V {
@@ -64,6 +64,16 @@
         layer_toggle {
             bindings = <&mo 1>;
             key-positions = <39 40>;
+        };
+
+        L_Shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <13 14>;
+        };
+
+        R_Shift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <22 21>;
         };
     };
 
