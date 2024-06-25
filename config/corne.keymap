@@ -13,22 +13,12 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <9 10>;
+            key-positions = <9 8>;
         };
 
         Return {
             bindings = <&kp RET>;
-            key-positions = <21 22>;
-        };
-
-        Spacebar {
-            bindings = <&kp QUESTION>;
-            key-positions = <20 21>;
-        };
-
-        quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <8 9>;
+            key-positions = <21 20>;
         };
 
         shift {
@@ -39,11 +29,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <2 1>;
-        };
-
-        caps {
-            bindings = <&kp CLCK>;
-            key-positions = <13 14>;
         };
     };
 
