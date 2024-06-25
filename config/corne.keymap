@@ -12,11 +12,6 @@
     combos {
         compatible = "zmk,combos";
 
-        quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <9 10>;
-        };
-
         Return {
             bindings = <&kp RET>;
             key-positions = <21 20>;
