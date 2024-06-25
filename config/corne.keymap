@@ -280,9 +280,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp EXCL      &kp AT        &kp HASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LBKT      &kp RIGHT_BRACKET  &kp ASTRK     &none         &none         &none
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5             &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
-&none  &trans        &trans        &trans        &trans                &trans                   &kp UNDER     &kp PLUS           &kp LBRC      &kp RBRC      &kp PIPE      &none
+&none  &kp EXCL      &kp AT        &kp HASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LBKT      &kp RIGHT_BRACKET  &kp LA(LS(MINUS))  &none         &none         &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5             &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &none
+&none  &trans        &trans        &trans        &trans                &trans                   &kp UNDER     &kp PLUS           &kp LBRC           &kp RBRC      &kp PIPE      &none
                                    &none         &none                 &kp SPACE                &kp RET       &trans             &none
             >;
         };
