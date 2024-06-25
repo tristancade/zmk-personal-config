@@ -75,6 +75,16 @@
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <22 21>;
         };
+
+        ASD_Z {
+            bindings = <&kp Z>;
+            key-positions = <13 14 15>;
+        };
+
+        SDF_X {
+            bindings = <&kp X>;
+            key-positions = <14 15 16>;
+        };
     };
 
     behaviors {
