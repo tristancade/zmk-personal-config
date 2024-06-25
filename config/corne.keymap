@@ -17,12 +17,7 @@
             key-positions = <9 10>;
         };
 
-        Return {
-            bindings = <&kp RET>;
-            key-positions = <21 22>;
-        };
-
-        Spacebar {
+        Questionmark {
             bindings = <&kp QUESTION>;
             key-positions = <20 21>;
         };
@@ -80,6 +75,21 @@
         D+F_V {
             bindings = <&kp V>;
             key-positions = <15 16>;
+        };
+
+        ASD_Z {
+            bindings = <&kp Z>;
+            key-positions = <13 14 15>;
+        };
+
+        SDF_X {
+            bindings = <&kp X>;
+            key-positions = <14 15 16>;
+        };
+
+        LayerShift {
+            bindings = <&mo 1>;
+            key-positions = <36 37>;
         };
     };
 
