@@ -91,6 +91,11 @@
             bindings = <&mo 1>;
             key-positions = <36 37>;
         };
+
+        LayerShiftR {
+            bindings = <&mo 1>;
+            key-positions = <40 41>;
+        };
     };
 
     behaviors {
