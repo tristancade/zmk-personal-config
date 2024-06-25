@@ -13,7 +13,7 @@
         compatible = "zmk,combos";
 
         Backspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <9 10>;
         };
 
@@ -27,12 +27,12 @@
             key-positions = <20 21>;
         };
 
-        quote {
-            bindings = <&kp DOUBLE_QUOTES>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
         };
 
-        shift {
+        shiftR {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <39 40>;
         };
@@ -40,11 +40,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <2 1>;
-        };
-
-        caps {
-            bindings = <&kp CLCK>;
-            key-positions = <13 14>;
         };
 
         shiftL {
