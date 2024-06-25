@@ -17,7 +17,12 @@
             key-positions = <9 10>;
         };
 
-        Questionmark {
+        Return {
+            bindings = <&kp RET>;
+            key-positions = <21 22>;
+        };
+
+        Spacebar {
             bindings = <&kp QUESTION>;
             key-positions = <20 21>;
         };
@@ -25,6 +30,11 @@
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <8 9>;
+        };
+
+        shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <38 39>;
         };
 
         tab {
@@ -36,227 +46,149 @@
             bindings = <&kp CLCK>;
             key-positions = <13 14>;
         };
-
-        spacebar {
-            bindings = <&kp SPACE>;
-            key-positions = <38 39>;
-        };
-
-        A+S_Z {
-            bindings = <&kp Z>;
-            key-positions = <13 14>;
-        };
-
-        S+D_X {
-            bindings = <&kp X>;
-            key-positions = <14 15>;
-        };
-
-        J+K_N {
-            bindings = <&kp N>;
-            key-positions = <19 20>;
-        };
-
-        K+L_M {
-            bindings = <&kp M>;
-            key-positions = <20 21>;
-        };
-
-        S+D_C {
-            bindings = <&kp C>;
-            key-positions = <15 14>;
-        };
-
-        F+J_B {
-            bindings = <&kp B>;
-            key-positions = <16 19>;
-        };
-
-        D+F_V {
-            bindings = <&kp V>;
-            key-positions = <15 16>;
-        };
-
-        ASD_Z {
-            bindings = <&kp Z>;
-            key-positions = <13 14 15>;
-        };
-
-        SDF_X {
-            bindings = <&kp X>;
-            key-positions = <14 15 16>;
-        };
-
-        LayerShift {
-            bindings = <&mo 1>;
-            key-positions = <36 37>;
-        };
-
-        LayerShiftR {
-            bindings = <&mo 1>;
-            key-positions = <40 41>;
-        };
     };
 
     behaviors {
         Hx2_N: Hx2_N {
             compatible = "zmk,behavior-tap-dance";
-            label = "HX2_N";
             #binding-cells = <0>;
             bindings = <&kp H>, <&kp N>;
         };
 
         Jx2_M: Jx2_M {
             compatible = "zmk,behavior-tap-dance";
-            label = "JX2_M";
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp M>;
         };
 
         SPCx2_Period: SPCx2_Period {
             compatible = "zmk,behavior-tap-dance";
-            label = "SPCX2_PERIOD";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp PERIOD>;
         };
 
         Kx2_Comma: Kx2_Comma {
             compatible = "zmk,behavior-tap-dance";
-            label = "KX2_COMMA";
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp COMMA>;
         };
 
         Ax2_Z: Ax2_Z {
             compatible = "zmk,behavior-tap-dance";
-            label = "AX2_Z";
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp Z>;
         };
 
         Sx2_X: Sx2_X {
             compatible = "zmk,behavior-tap-dance";
-            label = "SX2_X";
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp X>;
         };
 
         Dx2_C: Dx2_C {
             compatible = "zmk,behavior-tap-dance";
-            label = "DX2_C";
             #binding-cells = <0>;
             bindings = <&kp D>, <&kp C>;
         };
 
         Fx2_V: Fx2_V {
             compatible = "zmk,behavior-tap-dance";
-            label = "FX2_V";
             #binding-cells = <0>;
             bindings = <&kp F>, <&kp V>;
         };
 
         Gx2_B: Gx2_B {
             compatible = "zmk,behavior-tap-dance";
-            label = "GX2_B";
             #binding-cells = <0>;
             bindings = <&kp G>, <&kp B>;
         };
 
         h_hold_n: h_hold_n {
             compatible = "zmk,behavior-hold-tap";
-            label = "H_HOLD_N";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <18>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
         };
 
         j_hold_m: j_hold_m {
             compatible = "zmk,behavior-hold-tap";
-            label = "J_HOLD_M";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <19>;
         };
 
         K_hold_Comma: K_hold_Comma {
             compatible = "zmk,behavior-hold-tap";
-            label = "K_HOLD_COMMA";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <20>;
         };
 
         L_hold_period: L_hold_period {
             compatible = "zmk,behavior-hold-tap";
-            label = "L_HOLD_PERIOD";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <21>;
         };
 
         A_hold_Z: A_hold_Z {
             compatible = "zmk,behavior-hold-tap";
-            label = "A_HOLD_Z";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <13>;
         };
 
         S_hold_x: S_hold_x {
             compatible = "zmk,behavior-hold-tap";
-            label = "S_HOLD_X";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             hold-trigger-key-positions = <14>;
             flavor = "tap-preferred";
         };
 
         D_hold_C: D_hold_C {
             compatible = "zmk,behavior-hold-tap";
-            label = "D_HOLD_C";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <15>;
         };
 
         F_hold_V: F_hold_V {
             compatible = "zmk,behavior-hold-tap";
-            label = "F_HOLD_V";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <16>;
         };
 
         G_hold_B: G_hold_B {
             compatible = "zmk,behavior-hold-tap";
-            label = "G_HOLD_B";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <17>;
         };
@@ -273,10 +205,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I                  &kp O                    &kp P    &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &K_hold_Comma COMMA K  &L_hold_period PERIOD L  &kp RET  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none                  &none                    &none    &none
-                     &kp C  &kp V  &kp B    &kp N  &kp M  &mo 1
+&kp TAB    &kp Q          &kp W          &kp E          &kp R             &kp T            &kp Y          &kp U          &kp I                  &kp O                    &kp P     &kp BSPC
+&kp LCTRL  &A_hold_Z Z A  &S_hold_x X S  &D_hold_C C D  &F_hold_V V F     &G_hold_B B G    &h_hold_n N H  &j_hold_m M J  &K_hold_Comma COMMA K  &L_hold_period PERIOD L  &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z          &kp X          &kp C          &kp V             &kp B            &kp N          &kp M          &kp COMMA              &kp DOT                  &kp FSLH  &kp ESC
+                                         &mo 1          &kp LEFT_COMMAND  &kp SPACE        &kp SPACE      &kp SLASH      &mo 1
             >;
         };
 
@@ -288,10 +220,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH        &kp DLLR    &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR    &kp RPAR      &kp BSPC
-&kp Z      &kp Z     &kp X   &kp C           &kp V       &kp B        &kp N      &kp M     &kp COMMA  &kp PERIOD  &kp NUMBER_0  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans          &trans      &trans       &kp UNDER  &kp PLUS  &kp LBRC   &kp RBRC    &kp PIPE      &kp TILDE
-                             &bt BT_CLR_ALL  &bt BT_NXT  &kp SPACE    &kp RET    &trans    &kp RALT
+&kp TAB    &kp EXCL      &kp AT        &kp HASH        &kp DLLR      &kp PRCNT       &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC
+&kp Z      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp GRAVE
+&kp LSHFT  &trans        &trans        &trans          &trans        &trans          &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE      &kp TILDE
+                                       &bt BT_CLR_ALL  &bt BT_NXT    &kp SPACE       &kp RET       &trans        &kp RALT
             >;
         };
     };
