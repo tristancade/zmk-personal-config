@@ -61,6 +61,16 @@
             bindings = <&kp X>;
             key-positions = <14 15>;
         };
+
+        CV_Command {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <36 37>;
+        };
+
+        NM_Layershift {
+            bindings = <&mo 1>;
+            key-positions = <40 41>;
+        };
     };
 
     behaviors {
