@@ -18,7 +18,7 @@
         };
 
         Return {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp RET>;
             key-positions = <21 20>;
         };
 
@@ -28,7 +28,7 @@
         };
 
         shiftR {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mo 1>;
             key-positions = <39 40>;
         };
 
@@ -38,7 +38,7 @@
         };
 
         shiftL {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&mo 1>;
             key-positions = <38 37>;
         };
 
@@ -60,6 +60,36 @@
         NM_Layershift {
             bindings = <&mo 1>;
             key-positions = <40 41>;
+        };
+
+        HJ_N {
+            bindings = <&kp N>;
+            key-positions = <18 19>;
+        };
+
+        JK_M {
+            bindings = <&kp M>;
+            key-positions = <19 20>;
+        };
+
+        DF_C {
+            bindings = <&kp C>;
+            key-positions = <15 16>;
+        };
+
+        FG_V {
+            bindings = <&kp V>;
+            key-positions = <16 17>;
+        };
+
+        TG_B {
+            bindings = <&kp B>;
+            key-positions = <17 5>;
+        };
+
+        L+EXCL_Shift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <21 22>;
         };
     };
 
@@ -86,9 +116,9 @@
             hold-trigger-key-positions = <19>;
         };
 
-        K_QUESTION: K_QUESTION {
+        K_SINQUOTE: K_SINQUOTE {
             compatible = "zmk,behavior-hold-tap";
-            label = "K_QUESTION";
+            label = "K_SINQUOTE";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -97,9 +127,9 @@
             hold-trigger-key-positions = <20>;
         };
 
-        L_EXCLAIM: L_EXCLAIM {
+        L_DBLQUOTE: L_DBLQUOTE {
             compatible = "zmk,behavior-hold-tap";
-            label = "L_EXCLAIM";
+            label = "L_DBLQUOTE";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -217,6 +247,17 @@
             tapping-term-ms = <250>;
             hold-trigger-key-positions = <5>;
         };
+
+        EXCL_QUEST: EXCL_QUEST {
+            compatible = "zmk,behavior-hold-tap";
+            label = "EXCL_QUEST";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <22>;
+        };
     };
 
     keymap {
@@ -230,9 +271,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y             &kp U               &kp I                   &kp O              &kp P    &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G    &H_COMMA COMMA H  &J_PERIOD PERIOD J  &K_QUESTION QUESTION K  &L_EXCLAIM EXCL L  &kp RET  &none
-&none  &none  &none  &none  &none  &none    &none             &none               &none                   &none              &none    &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y             &kp U               &kp I                       &kp O                        &kp P                      &none
+&none  &kp A  &kp S  &kp D  &kp F  &kp G    &H_COMMA COMMA H  &J_PERIOD PERIOD J  &K_SINQUOTE SINGLE_QUOTE K  &L_DBLQUOTE DOUBLE_QUOTES L  &EXCL_QUEST EXCL QUESTION  &none
+&none  &none  &none  &none  &none  &none    &none             &none               &none                       &none                        &none                      &none
                      &kp C  &kp V  &kp B    &kp SPACE         &kp N               &kp M
             >;
         };
@@ -245,10 +286,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL      &kp AT        &kp HASH        &kp DLLR      &kp PRCNT       &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC
-&kp Z      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp GRAVE
-&kp LSHFT  &trans        &trans        &trans          &trans        &trans          &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE      &kp TILDE
-                                       &bt BT_CLR_ALL  &bt BT_NXT    &kp SPACE       &kp RET       &trans        &kp RALT
+&kp TAB    &kp EXCL      &kp AT        &kp HASH        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LBKT      &kp RIGHT_BRACKET  &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC
+&kp Z      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5             &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp GRAVE
+&kp LSHFT  &trans        &trans        &trans          &trans                &trans                   &kp UNDER     &kp PLUS           &kp LBRC      &kp RBRC      &kp PIPE      &kp TILDE
+                                       &bt BT_CLR_ALL  &bt BT_NXT            &kp SPACE                &kp RET       &trans             &kp RALT
             >;
         };
     };
