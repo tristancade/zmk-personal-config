@@ -56,11 +56,6 @@
             key-positions = <16 17>;
         };
 
-        Command {
-            bindings = <&kp LEFT_COMMAND>;
-            key-positions = <37 38>;
-        };
-
         layer_toggle {
             bindings = <&mo 1>;
             key-positions = <39 40>;
@@ -86,14 +81,9 @@
             key-positions = <14 15 16>;
         };
 
-        Option {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <37 36>;
-        };
-
-        R_Option {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <40 41>;
+        layertoggleL {
+            bindings = <&mo 1>;
+            key-positions = <37 38>;
         };
     };
 
@@ -136,10 +126,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U   &kp I   &kp O  &kp P    &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &Jx2_3  &Kx2_3  &kp L  &kp RET  &none
-&none  &none  &none  &none  &none  &none        &none      &none   &none   &none  &none    &none
-                     &none  &none  &kp SPACE    &kp SPACE  &none   &none
+&none  &kp Q  &kp W  &kp E  &kp R         &kp T               &kp Y      &kp U          &kp I   &kp O  &kp P    &none
+&none  &kp A  &kp S  &kp D  &kp F         &kp G               &kp H      &Jx2_3         &Kx2_3  &kp L  &kp RET  &none
+&none  &none  &none  &none  &none         &none               &none      &none          &none   &none  &none    &none
+                     &none  &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE  &kp RIGHT_ALT  &none
             >;
         };
 
