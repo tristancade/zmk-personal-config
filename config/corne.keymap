@@ -85,6 +85,16 @@
             bindings = <&kp X>;
             key-positions = <14 15 16>;
         };
+
+        Option {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <37 36>;
+        };
+
+        R_Option {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <40 41>;
+        };
     };
 
     behaviors {
