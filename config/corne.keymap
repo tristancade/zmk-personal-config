@@ -41,24 +41,14 @@
             key-positions = <19 20>;
         };
 
-        SD_C {
-            bindings = <&kp C>;
-            key-positions = <14 15>;
-        };
-
         DF_V {
-            bindings = <&kp V>;
+            bindings = <&kp C>;
             key-positions = <15 16>;
         };
 
         FG_B {
             bindings = <&kp B>;
             key-positions = <16 17>;
-        };
-
-        layer_toggle {
-            bindings = <&mo 1>;
-            key-positions = <39 40>;
         };
 
         L_Shift {
@@ -71,19 +61,14 @@
             key-positions = <22 10>;
         };
 
-        ASD_Z {
-            bindings = <&kp Z>;
-            key-positions = <13 14 15>;
-        };
-
-        SDF_X {
-            bindings = <&kp X>;
-            key-positions = <14 15 16>;
-        };
-
         layertoggleL {
             bindings = <&mo 1>;
-            key-positions = <37 38>;
+            key-positions = <37 40>;
+        };
+
+        GT_V {
+            bindings = <&kp V>;
+            key-positions = <17 5>;
         };
     };
 
