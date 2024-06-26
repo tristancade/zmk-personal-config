@@ -85,6 +85,56 @@
             bindings = <&mo 1>;
             key-positions = <37 38>;
         };
+
+        commandH {
+            bindings = <&kp N>;
+            key-positions = <38 18>;
+        };
+
+        optHN {
+            bindings = <&kp N>;
+            key-positions = <37 18>;
+        };
+
+        commJM {
+            bindings = <&kp M>;
+            key-positions = <38 19>;
+        };
+
+        optJM {
+            bindings = <&kp M>;
+            key-positions = <37 19>;
+        };
+
+        optGB {
+            bindings = <&kp B>;
+            key-positions = <40 17>;
+        };
+
+        optFV {
+            bindings = <&kp V>;
+            key-positions = <40 16>;
+        };
+
+        optDC {
+            bindings = <&kp C>;
+            key-positions = <40 15>;
+        };
+
+        comGB {
+            bindings = <&kp B>;
+            key-positions = <39 17>;
+        };
+
+        comFV {
+            bindings = <&kp V>;
+            key-positions = <39 16>;
+        };
+
+        comDC {
+            bindings = <&kp C>;
+            key-positions = <39 15>;
+        };
     };
 
     behaviors {
