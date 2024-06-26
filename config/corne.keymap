@@ -98,6 +98,16 @@
 
             tapping-term-ms = <400>;
         };
+
+        spacebar_hold_mod: spacebar_hold_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACEBAR_HOLD_MOD";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -111,10 +121,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E         &kp R             &kp T    &kp Y  &kp U      &kp I   &kp O  &kp P    &none
-&none  &kp A  &kp S  &kp D         &kp F             &kp G    &kp H  &Jx2_3     &Kx2_3  &kp L  &kp RET  &none
-&none  &none  &none  &none         &none             &none    &none  &none      &none   &none  &none    &none
-                     &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 2    &mo 2  &kp SPACE  &none
+&none  &kp Q  &kp W  &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I   &kp O  &kp P    &none
+&none  &kp A  &kp S  &kp D         &kp F             &kp G                         &kp H                       &Jx2_3     &Kx2_3  &kp L  &kp RET  &none
+&none  &none  &none  &none         &none             &none                         &none                       &none      &none   &none  &none    &none
+                     &kp LEFT_ALT  &kp LEFT_COMMAND  &spacebar_hold_mod 2 SPACE    &spacebar_hold_mod 2 SPACE  &kp SPACE  &none
             >;
         };
 
