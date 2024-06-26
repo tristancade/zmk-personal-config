@@ -92,6 +92,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp PERIOD>;
+
+            tapping-term-ms = <400>;
         };
 
         Jx2_3: Jx2_3 {
@@ -99,6 +101,8 @@
             label = "JX2_3";
             #binding-cells = <0>;
             bindings = <&kp J>, <&kp COMMA>, <&kp PERIOD>;
+
+            tapping-term-ms = <400>;
         };
 
         Kx2_3: Kx2_3 {
@@ -106,6 +110,8 @@
             label = "KX2_3";
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            tapping-term-ms = <400>;
         };
     };
 
