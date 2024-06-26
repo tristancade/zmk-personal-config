@@ -21,7 +21,7 @@
             key-positions = <21 20>;
         };
 
-        shift {
+        spacebar {
             bindings = <&kp SPACE>;
             key-positions = <38 39>;
         };
@@ -129,26 +129,19 @@
 &none  &none         &none         &none         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(LA(MINUS))  &none         &none         &none
 &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5             &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &none
 &none  &trans        &trans        &trans        &trans                &trans                   &none             &none              &none              &none         &none         &none
-                                   &none         &none                 &kp SPACE                &kp RET           &trans             &none
+                                   &none         &none                 &none                    &none             &trans             &none
             >;
         };
 
         OPT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B     &kp N   &kp M   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp N5                   &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp Z         &kp X         &kp C         &kp V                 &kp B                    &kp N             &kp M              &kp LA(LS(MINUS))  &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans             &trans        &trans        &trans
+                                    &trans        &trans                &none                    &none             &trans             &trans
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        OPT {
-            if-layers = <0>;
-            then-layer = <2>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
