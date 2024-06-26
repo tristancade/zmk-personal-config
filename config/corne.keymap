@@ -108,6 +108,76 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
+
+        hn: hn {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HN";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        jm: jm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "JM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        az: az {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AZ";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        sx: sx {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SX";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        dc: dc {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DC";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        fv: fv {
+            compatible = "zmk,behavior-hold-tap";
+            label = "FV";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
+
+        gb: gb {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GB";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
