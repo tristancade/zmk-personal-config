@@ -173,15 +173,6 @@
             flavor = "balanced";
         };
 
-        L_apost_quote: L_apost_quote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L_APOST_QUOTE";
-            #binding-cells = <0>;
-            bindings = <&kp L>, <&kp APOS>, <&kp DOUBLE_QUOTES>;
-
-            tapping-term-ms = <400>;
-        };
-
         quest_23: quest_23 {
             compatible = "zmk,behavior-tap-dance";
             label = "QUEST_23";
@@ -219,9 +210,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O           &kp P  &none
-&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &L_apost_quote  &none  &none
-&none  &kp Z    &kp X    &kp C         &kp V             &kp B                         &kp N                       &kp M      &none    &none           &none  &none
+&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O  &kp P  &none
+&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &none  &none  &none
+&none  &kp Z    &kp X    &kp C         &kp V             &kp B                         &kp N                       &kp M      &none    &none  &none  &none
                          &kp LEFT_ALT  &kp LEFT_COMMAND  &spacebar_hold_mod 2 SPACE    &spacebar_hold_mod 2 SPACE  &kp SPACE  &none
             >;
         };
