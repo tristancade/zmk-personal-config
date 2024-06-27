@@ -14,12 +14,12 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
+            key-positions = <9 10>;
         };
 
         Return {
             bindings = <&kp RET>;
-            key-positions = <21 20>;
+            key-positions = <21 22>;
         };
 
         spacebar {
@@ -30,16 +30,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <2 3>;
-        };
-
-        HJ_N {
-            bindings = <&kp N>;
-            key-positions = <18 19>;
-        };
-
-        JK_M {
-            bindings = <&kp M>;
-            key-positions = <19 20>;
         };
 
         DF_V {
@@ -70,6 +60,21 @@
         GT_V {
             bindings = <&kp V>;
             key-positions = <17 5>;
+        };
+
+        JKcomma {
+            bindings = <&kp COMMA>;
+            key-positions = <19 20>;
+        };
+
+        KL_quest {
+            bindings = <&kp QUESTION>;
+            key-positions = <20 21>;
+        };
+
+        JKL_exclam {
+            bindings = <&kp EXCL>;
+            key-positions = <19 20 21>;
         };
     };
 
@@ -189,9 +194,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O           &kp P    &none
-&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &L_apost_quote  &kp RET  &none
-&none  &none    &none    &none         &none             &none                         &none                       &none      &none    &none           &none    &none
+&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O           &kp P  &none
+&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &L_apost_quote  &none  &none
+&none  &none    &none    &none         &none             &none                         &none                       &none      &none    &none           &none  &none
                          &kp LEFT_ALT  &kp LEFT_COMMAND  &spacebar_hold_mod 2 SPACE    &spacebar_hold_mod 2 SPACE  &kp SPACE  &none
             >;
         };
