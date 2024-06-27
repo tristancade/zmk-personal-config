@@ -73,19 +73,16 @@
     };
 
     behaviors {
-        SPCx2_Period: SPCx2_Period {
+        Kx2345: Kx2345 {
             compatible = "zmk,behavior-tap-dance";
+            label = "KX2345";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp PERIOD>;
-
-            tapping-term-ms = <400>;
-        };
-
-        Kx2_3: Kx2_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "KX2_3";
-            #binding-cells = <0>;
-            bindings = <&kp K>, <&kp COMMA>, <&kp QUESTION>, <&kp EXCLAMATION>;
+            bindings =
+                <&kp K>,
+                <&kp PERIOD>,
+                <&kp COMMA>,
+                <&kp QUESTION>,
+                <&kp EXCL>;
 
             tapping-term-ms = <400>;
         };
@@ -169,6 +166,15 @@
             tapping-term-ms = <180>;
             flavor = "balanced";
         };
+
+        L_apost_quote: L_apost_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_APOST_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp APOS>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <400>;
+        };
     };
 
     keymap {
@@ -182,9 +188,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I   &kp O  &kp P    &none
-&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2_3  &kp L  &kp RET  &none
-&none  &none    &none    &none         &none             &none                         &none                       &none      &none   &none  &none    &none
+&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O  &kp P    &none
+&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &kp L  &kp RET  &none
+&none  &none    &none    &none         &none             &none                         &none                       &none      &none    &none  &none    &none
                          &kp LEFT_ALT  &kp LEFT_COMMAND  &spacebar_hold_mod 2 SPACE    &spacebar_hold_mod 2 SPACE  &kp SPACE  &none
             >;
         };
