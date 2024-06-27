@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -188,9 +189,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O  &kp P    &none
-&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &kp L  &kp RET  &none
-&none  &none    &none    &none         &none             &none                         &none                       &none      &none    &none  &none    &none
+&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O           &kp P    &none
+&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &L_apost_quote  &kp RET  &none
+&none  &none    &none    &none         &none             &none                         &none                       &none      &none    &none           &none    &none
                          &kp LEFT_ALT  &kp LEFT_COMMAND  &spacebar_hold_mod 2 SPACE    &spacebar_hold_mod 2 SPACE  &kp SPACE  &none
             >;
         };
@@ -212,10 +213,10 @@
 
         OPT {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4          &kp N5                   &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp Z         &kp X         &kp C         &kp V                 &kp B                    &kp N             &kp M              &kp LA(LS(MINUS))  &trans        &trans        &trans
-&trans  &trans        &trans        &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans             &trans        &trans        &trans
-                                    &trans        &trans                &none                    &none             &trans             &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4          &kp N5                   &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp Z         &kp X         &kp C           &kp V                 &kp B                    &kp N             &kp M              &kp LA(LS(MINUS))  &trans        &none         &trans
+&trans  &trans        &trans        &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans             &trans        &trans        &trans
+                                    &bt BT_CLR_ALL  &trans                &none                    &none             &trans             &bt BT_NXT
             >;
         };
     };
