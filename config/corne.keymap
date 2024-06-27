@@ -67,8 +67,8 @@
             key-positions = <19 20>;
         };
 
-        KL_quest {
-            bindings = <&kp QUESTION>;
+        KL_quote {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <20 21>;
         };
 
