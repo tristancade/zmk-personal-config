@@ -14,12 +14,12 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <9 10>;
+            key-positions = <9 8>;
         };
 
         Return {
             bindings = <&kp RET>;
-            key-positions = <21 22>;
+            key-positions = <21 20>;
         };
 
         spacebar {
@@ -67,24 +67,14 @@
             key-positions = <19 20>;
         };
 
-        KL_quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <20 21>;
-        };
-
         JKL_exclam {
             bindings = <&kp EXCL>;
             key-positions = <19 20 21>;
         };
 
-        backspace_alt {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
-        };
-
         comma-space {
             bindings = <&comma_space>;
-            key-positions = <39 37>;
+            key-positions = <38 40>;
         };
     };
 
@@ -191,6 +181,15 @@
 
             tapping-term-ms = <400>;
         };
+
+        quest_23: quest_23 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUEST_23";
+            #binding-cells = <0>;
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            tapping-term-ms = <400>;
+        };
     };
 
     macros {
@@ -244,9 +243,9 @@
 
         OPT {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp Z         &kp X         &kp C           &kp V         &kp B     &kp N         &kp M         &kp QUESTION  &kp EXCL      &none         &trans
-&trans  &trans        &trans        &trans          &none         &none     &none         &none         &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0  &trans
+&trans  &kp Z         &kp X         &kp C           &kp V         &kp B     &kp N         &kp M         &quest_23     &kp SINGLE_QUOTE  &none         &trans
+&trans  &trans        &trans        &trans          &none         &none     &none         &none         &trans        &trans            &trans        &trans
                                     &bt BT_CLR_ALL  &trans        &none     &kp EXCL      &trans        &bt BT_NXT
             >;
         };
