@@ -23,7 +23,7 @@
         };
 
         spacebar {
-            bindings = <&kp SPACE>;
+            bindings = <&kp PERIOD>;
             key-positions = <38 39>;
         };
 
@@ -180,6 +180,15 @@
             bindings = <&kp L>, <&kp APOS>, <&kp DOUBLE_QUOTES>;
 
             tapping-term-ms = <400>;
+        };
+    };
+
+    macros {
+        period_space: period_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp SPACE>;
+            label = "PERIOD_SPACE";
         };
     };
 
