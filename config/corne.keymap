@@ -29,7 +29,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         DF_V {
@@ -75,6 +75,11 @@
         JKL_exclam {
             bindings = <&kp EXCL>;
             key-positions = <19 20 21>;
+        };
+
+        backspace_alt {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 8>;
         };
     };
 
