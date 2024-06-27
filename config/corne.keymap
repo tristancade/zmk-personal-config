@@ -23,7 +23,7 @@
         };
 
         spacebar {
-            bindings = <&kp PERIOD>;
+            bindings = <&period_space>;
             key-positions = <38 39>;
         };
 
