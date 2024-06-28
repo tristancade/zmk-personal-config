@@ -234,10 +234,10 @@
 
         OPT {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0  &trans
-&trans  &kp Z         &kp X         &kp C           &kp V         &kp B     &kp N         &kp M         &quest_23     &kp SINGLE_QUOTE  &none         &trans
-&trans  &trans        &trans        &trans          &none         &none     &none         &none         &trans        &trans            &trans        &trans
-                                    &bt BT_CLR_ALL  &trans        &none     &kp EXCL      &trans        &bt BT_NXT
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5    &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0  &trans
+&trans  &kp Z         &kp X         &kp C           &kp V         &kp B     &kp N              &kp M         &quest_23     &kp SINGLE_QUOTE  &none         &trans
+&trans  &trans        &trans        &trans          &none         &none     &none              &none         &trans        &trans            &trans        &trans
+                                    &bt BT_CLR_ALL  &trans        &none     &kp RS(RA(MINUS))  &trans        &bt BT_NXT
             >;
         };
     };
