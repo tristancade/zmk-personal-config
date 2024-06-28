@@ -210,10 +210,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q    &kp W    &kp E         &kp R             &kp T                         &kp Y                       &kp U      &kp I    &kp O  &kp P  &none
-&none  &az Z A  &sx X S  &dc C D       &fv V F           &gb B G                       &hn N H                     &jm M J    &Kx2345  &none  &none  &none
-&none  &kp Z    &kp X    &kp C         &kp V             &kp B                         &kp N                       &kp M      &none    &none  &none  &none
-                         &kp LEFT_ALT  &kp LEFT_COMMAND  &spacebar_hold_mod 2 SPACE    &spacebar_hold_mod 2 SPACE  &kp SPACE  &none
+&none  &kp Q  &kp W  &kp E         &kp R             &kp T                         &kp Y                       &kp U  &kp I      &kp O       &kp P         &none
+&none  &kp A  &kp S  &kp D         &kp F             &kp G                         &kp H                       &kp J  &Kx2345    &kp L       &kp SQT       &none
+&none  &kp Z  &kp X  &kp C         &kp V             &kp B                         &kp N                       &kp M  &kp COMMA  &kp PERIOD  &kp QUESTION  &none
+                     &kp LEFT_ALT  &kp LEFT_COMMAND  &spacebar_hold_mod 2 SPACE    &spacebar_hold_mod 2 SPACE  &none  &none
             >;
         };
 
