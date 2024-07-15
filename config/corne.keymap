@@ -244,7 +244,7 @@
         OPT {
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &trans
-&trans  &none         &none         &none           &none         &none     &none         &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none         &trans
+&trans  &kp Z         &kp X         &none           &none         &none     &none         &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none         &trans
 &trans  &trans        &trans        &trans          &none         &none     &none         &none           &kp DOWN      &trans           &trans        &trans
                                     &bt BT_CLR_ALL  &trans        &none     &dashes       &trans          &bt BT_NXT
             >;
